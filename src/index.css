@@ -1,0 +1,150 @@
+body{
+  margin: 0;
+  min-width: 150px;
+}
+.container {
+  display: flex;
+  height: 100vh; 
+}
+.containerSession{
+ align-items: center;
+ display: flex;
+ flex-direction: column;
+  margin-top: 1rem;
+  border-bottom: 2px  rgba(255, 255, 255, 0.452) solid;
+}
+.containerPlayList{
+display: flex;
+  min-width: 120px;
+  margin-top: 30%;
+  justify-content: center;
+ 
+  
+}
+.bar{
+  width: 100%;
+  min-width: 120px;
+  margin-top: 10%;
+}
+.player{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.aside {
+  width: 25%;
+  background: linear-gradient(rgba(125, 125, 212, 0.623), rgba(125, 211, 207, 0.603));
+  padding: 20px;
+  box-sizing: border-box;
+  position: fixed; 
+  height: 100vh;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+  z-index: 1; 
+}
+.header{
+  display: flex;
+  height: 60px;
+  border-bottom: 2px  rgba(255, 255, 255, 0.452) solid;
+
+ 
+}
+
+.main {
+  margin-left: 25%; 
+  width: 75%;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  background: linear-gradient(rgba(81, 81, 137, 0.623), rgba(125, 211, 207, 0.107));
+  color: white;
+  height: 100vh;
+  
+}
+.masEscuchados{
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.534));
+  padding: 2rem;
+  border-radius: 0px 0px 20px 20px;
+  backdrop-filter: blur(10px);
+  margin-bottom: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  
+}
+
+
+@media (max-width: 775px) {
+  .container {
+    display: block;
+    flex-direction: column; /
+  }
+  .containerSession{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+  
+  .containerPlayList{
+      margin-top: 5%;         
+  }
+
+  .bar{
+    
+    margin-top: 2%;
+  }
+
+  .aside {
+    position: static; 
+    width: 100%; 
+    height: auto; 
+    overflow-y: visible; 
+    color:white;
+  }
+
+  .main {
+    width: 100%; 
+    margin-left: 0;
+  }
+  .player{
+    position:fixed;
+    z-index: 2000;
+  }
+ 
+}
+
+
+@media (max-width: 330px) {
+ .containerSession{
+  flex-direction: column;
+   
+ }
+}
+
+h2{
+color: rgb(254, 252, 252);
+font-size: 1.5rem;
+justify-content: center;
+background-color: rgba(0, 0, 0, 0.904);
+backdrop-filter: blur(10px);
+border-radius:  2rem 2rem 0rem 0rem;
+padding: 0.5rem;
+margin-bottom: 0.2rem;
+text-align: center;
+}
+
+@media (max-width: 470px) {
+  h2{
+  
+    font-size: 1.2rem;
+    
+    }
+  
+}

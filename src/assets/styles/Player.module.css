@@ -1,0 +1,23 @@
+.container{
+
+    display: flex;
+    justify-content: center;
+    padding: .7rem;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    gap: 0.5rem;
+
+
+}
+.button{
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    gap: 0.5rem;
+    border-radius: 20px;
+}
+.button:hover {
+    background-color: rgba(121, 192, 186, 0.5);
+  
+}

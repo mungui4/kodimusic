@@ -1,0 +1,44 @@
+.container{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    transition: ease-in-out 0.2s;
+    padding: 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    border-bottom: 5px rgb(26, 208, 228) solid;
+}
+.container:hover{
+    transform: scale(1.2);
+
+}
+
+.profile{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 500px;
+}
+@media (max-width: 536px) {
+    .profile{
+        width: 5rem;
+        height: 5rem;
+       
+    }
+    .autor, .name{
+        margin: 0;
+        max-width: 120px;
+    
+    }
+ 
+}
+
+.autor, .name{
+    margin: 0;
+ 
+
+}
+

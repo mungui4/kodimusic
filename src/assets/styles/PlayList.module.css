@@ -1,0 +1,55 @@
+.playlistSection {
+    width: 100%;
+    max-width: 400px;
+    background-color: #1d1d1d;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.playlistTitle {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #79c0ba;
+}
+
+.playlistSong {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.playlistSong:hover {
+    background-color: rgba(121, 192, 186, 0.5);
+}
+
+.songNumber {
+    color: #79c0ba;
+    font-weight: bold;
+}
+
+.songTitle {
+    flex-grow: 1;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.songDuration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.3rem;
+    font-size: 14px;
+    color: #ccc;
+}

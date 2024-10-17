@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    align-items: center;
+}
+.iconContainer{
+    margin-left: 0.1rem;
+    margin-right: 0.4rem;
+}
+.text{
+    margin: 2px;
+    font-size: 15px;
+    color: white;
+}
+.link{
+    text-decoration:none;
+    margin-left: 0.5rem;
+}
+.button{
+    margin-bottom: 10px;
+    border-radius: 6px;
+    min-width: 148px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #1d1d1d; 
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: none;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    height: 3rem;
+    transition: background-color 0.3s ease;
+  
+}
+.button:hover {
+    background-color: rgba(121, 192, 186, 0.5);
+  
+}
